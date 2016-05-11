@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GMapWpfApplication1/GMapWpfApplication1/bin/Debug
+/GMapWpfApplication1/GMapWpfApplication1/obj/Debug
+/GMapWpfApplication1/packages/GMap.NET.Presentation.1.7.1

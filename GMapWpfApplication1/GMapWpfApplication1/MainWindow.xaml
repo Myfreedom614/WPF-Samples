@@ -1,0 +1,23 @@
+﻿<Window x:Class="GMapWpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GMapWpfApplication1"
+        xmlns:control="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="25" />
+        </Grid.RowDefinitions>
+        <control:GMapControl x:Name="gmap1" Zoom="13" MaxZoom="24" MinZoom="1" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+            <Button x:Name="btnStart" Content="Set Start" Click="btnStart_Click" />
+            <Button Margin="10,0,10,0" x:Name="btnEnd" Content="Set End" Click="btnEnd_Click" />
+            <Button HorizontalAlignment="Right" x:Name="btnRoute" Content="Add Route" Click="btnRoute_Click" />
+        </StackPanel>
+        
+    </Grid>
+</Window>
